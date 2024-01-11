@@ -1,0 +1,118 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: black;
+}
+
+header nav ul button{
+    margin-right: 40px;
+    border-radius: 5px;
+    padding: 8px 15px 8px 15px;
+    background:linear-gradient(to bottom right ,rgb(228,234,237), white);
+    box-shadow: 1px 1px 3px 3px rgb(220,226,236);
+    border: none;
+}
+
+header nav ul button a{
+    color: red;
+}
+
+header nav{ 
+    display: none; 
+} 
+
+header .menu{ 
+    border: none;
+    font-size: 18px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.lista{
+    display: none;
+    background:linear-gradient(to bottom right ,rgb(228,234,237), white);
+    box-shadow: 1px 1px 3px 3px rgb(220, 226, 236);
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 190px;
+    padding: 5px;
+}
+
+.lista li a{
+    text-decoration: none;
+    display: flex;
+    padding: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 12px;
+}
+
+.lista button a{
+    text-decoration: none;
+    color: red;
+    padding: 3px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.menu:hover .lista{
+    display: block;
+    gap: 20px;
+}
+
+
+.menu li a:hover{
+    background-color: gray;
+}
+
+
+@media screen and (min-width: 768px) { 
+    header nav{ 
+        display:flex; 
+    } 
+
+    header nav a{ 
+        text-decoration: none;  
+    } 
+
+    header nav button{ 
+        background-color: transparent; 
+        border: 2px solid var(black); 
+        border-radius: 4px; 
+        padding: 12px; 
+        width: 100px; 
+        text-align: center; 
+    } 
+
+    header .menu{ 
+        display: none; 
+    } 
+} 
+
+
