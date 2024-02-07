@@ -1,3 +1,4 @@
+
 @import url('/navbar.css');
 
 * {
@@ -152,21 +153,23 @@ main .contenedor0 .foto-perfil img {
 
 .primero .contenedor1{
     display: flex;
-    flex-direction: column;
+    overflow: hidden;
     gap: 35px;
 }
+
+
 
 .primero .contenedor1 .contenedor-cajas1 {
     display: flex;
     gap: 35px;
 }
 
-.primero .contenedor1 .contenedor-cajas1 .cajas1 {
+.primero .contenedor1 .cajas1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 35px;
-    width: 350px;
+    width: 265px;
     background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
     box-shadow: 1px 1px 3px 3px rgb(220, 226, 236);
     border-radius: 5px;
@@ -181,6 +184,31 @@ main .contenedor0 .foto-perfil img {
     color: red;
     margin-left: 10px;
 }
+
+.prev, .next{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    bottom: -315px;
+}
+
+.next:hover{
+    transform:scale(1.2,1.2)
+}
+.prev:hover{
+    transform:scale(1.2,1.2)
+}
+
+.prev{
+    left: 180px;
+}
+
+.next{
+    right: 180px;
+}
+
 
 @media screen and (max-width: 1100px){
     .primero{
@@ -230,6 +258,49 @@ main .contenedor0 .foto-perfil img {
     gap: 35px;
 }
 
+.segundo .contenedor2 .contenedor-cajas2 .ocultar{
+    display: none;
+}
+
+.segundo .contenedor2 .contenedor-cajas2 .visible{
+    display: inline;
+    position: absolute;
+    background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
+    box-shadow: 1px 1px 3px 3px rgb(220, 226, 236);
+    border-radius: 10px;
+    width: 265px;
+    padding:11px;
+    margin-top: 140px;
+}
+
+
+.segundo .contenedor2 .contenedor-cajas2 .estilo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-top: 10px;
+}
+
+.segundo .contenedor2 .contenedor-cajas2 .estilo .git{
+    padding: 5px;
+    font-size: 20px;
+    background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
+    box-shadow: 1px 1px 3px 3px rgb(220, 226, 236);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.segundo .contenedor2 .contenedor-cajas2 .estilo .cerrar{
+    background: red;
+    box-shadow: 1px 1px 3px 3px rgb(220, 226, 236);
+    border-radius: 20px;
+    border: none;
+    padding: 9px;
+    cursor: pointer;
+}
+
 .segundo .contenedor2 .contenedor-cajas2 .cajas2{
     display: flex;
     flex-direction: column;
@@ -248,6 +319,18 @@ main .contenedor0 .foto-perfil img {
 
 .segundo .contenedor2 .contenedor-cajas2 .cajas2 h5 {
     font-size: 18px;
+}
+
+.segundo .contenedor2 .contenedor-cajas2 .cajas2 .saberMas{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
+    border: none;
+    cursor: pointer;
+}
+
+.saberMas:hover{
+    box-shadow: 1px 1px 3px 3px rgb(220, 226, 236);
 }
 
 .segundo  .contenedor2 .contenedor-cajas2 .cajas2 .sub-titulo2 {
@@ -495,7 +578,7 @@ main .contenedor0 .foto-perfil img {
 .quinto .contenedor5 .cajas5 .sub-cajas5 {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 30px;
     gap: 15px;
     background: linear-gradient(to bottom right, rgb(228, 234, 237), white);
     box-shadow: 1px 1px 3px 3px rgb(220, 226, 236);
@@ -597,12 +680,20 @@ main .contenedor0 .foto-perfil img {
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+    cursor: pointer;
 }
 
-.quinto .contenedor5 .datos button a {
+.quinto .contenedor5 .datos button a{
     text-decoration: none;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.respuesta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 1100px){

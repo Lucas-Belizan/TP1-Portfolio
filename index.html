@@ -37,41 +37,41 @@
                 <li><a href="#blog">BLOG</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <button><a href="#">BUY NOW</a></button>
-            </span>
+        </span>
     </header>
 
     <main id="inicio">
         <div class="contenedor0">
-        <div class="contenedor-cajas0">
-            <div class="cajas0">
-                <h3 class="black">WELCOME TO MY WORLD</h3>
-                <H1>HI, I´m <strong>Sheroz Mir a</strong> UX UI Designer</H1>
-                <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each every
-                    interaction. I´m not adding motion just to spruce things up, but doing it in ways that.</p>
-            </div>
-            <div class="redes-sociales">
-                <div class="redes0">
-                    <h3 class="black">FIND WITH ME</h3>
-                    <div class="boton0">
-                        <button><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button>
-                        <button><a href="#"><i class="fa-brands fa-instagram"></i></a></button>
-                        <button><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></button>
+            <div class="contenedor-cajas0">
+                <div class="cajas0">
+                    <h3 class="black">WELCOME TO MY WORLD</h3>
+                    <H1>HI, I´m <strong>Sheroz Mir a</strong> UX UI Designer</H1>
+                    <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each every
+                        interaction. I´m not adding motion just to spruce things up, but doing it in ways that.</p>
+                </div>
+                <div class="redes-sociales">
+                    <div class="redes0">
+                        <h3 class="black">FIND WITH ME</h3>
+                        <div class="boton0">
+                            <button><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button>
+                            <button><a href="#"><i class="fa-brands fa-instagram"></i></a></button>
+                            <button><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></button>
+                        </div>
+                    </div>
+                    <div class="redes0">
+                        <h3 class="black">BEST SKILL ON</h3>
+                        <div class="boton0">
+                            <button><a class="invision" href="#"><i class="fa-brands fa-invision"></i></a></button>
+                            <button><a class="diamond" href="#"><i class="fa-regular fa-gem"></i></a></button>
+                            <button><a class="figma" href="#"><i class="fa-brands fa-figma"></i></a></button>
+                        </div>
                     </div>
                 </div>
-                <div class="redes0">
-                    <h3 class="black">BEST SKILL ON</h3>
-                    <div class="boton0">
-                        <button><a class="invision" href="#"><i class="fa-brands fa-invision"></i></a></button>
-                        <button><a class="diamond" href="#"><i class="fa-regular fa-gem"></i></a></button>
-                        <button><a class="figma" href="#"><i class="fa-brands fa-figma"></i></a></button>
-                    </div>
-                </div>
+            </div>
+            <div class="foto-perfil">
+                <img src="Images/Fotoperfil.jpg" alt="Foto" id="imagen">
             </div>
         </div>
-        <div class="foto-perfil">
-            <img src="Images/Fotoperfil.jpg" alt="Foto">
-        </div>
-    </div>
     </main>
 
     <section class="primero" id="feactures">
@@ -80,6 +80,7 @@
             <h1>What I do</h1>
         </div>
         <div class="contenedor1">
+            
             <div class="contenedor-cajas1">
                 <div class="cajas1">
                     <i class="fa-solid fa-bars"></i>
@@ -96,8 +97,7 @@
                     <h2 class="titulo-caja">App Development</h2>
                     <p>I throw myself down among the tall grass by the stream as i lie close to the earth.</p>
                 </div>
-            </div>
-            <div class="contenedor-cajas1">
+
                 <div class="cajas1">
                     <i class="fa-brands fa-twitch"></i>
                     <h2 class="titulo-caja">Mobile App</h2>
@@ -114,6 +114,8 @@
                     <p>It uses a dictionary of over 200 Latin wwords, combined with a handful of model sentences.</p>
                 </div>
             </div>
+            <div class="prev" id="prev" onclick="CajasSlider(-1)"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div class="next" id="next" onclick="CajasSlider(1)"><i class="fa-solid fa-circle-chevron-right"></i></div>
         </div>
     </section>
 
@@ -122,61 +124,131 @@
             <h3>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h3>
             <H1>My Portfolio</H1>
         </div>
+
+
         <div class="contenedor2">
             <div class="contenedor-cajas2">
                 <div class="cajas2">
+
+                    <div id="infoAdicional1" class="ocultar">
+                        <p>Lorem ipsum dolor, sit amet. Facere doloribus eveniet deseruntdolorum, laborum rem, facilis,
+                            voluptate reiciendis impedit. Dolores?</p>
+                        <div class="estilo">
+                            <button class="git"><a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a></button>
+                            <button class="cerrar" id="cerrar1">Cerrar</button>
+                        </div>
+                    </div>
                     <img src="Tercera seccion/Agencia de marketing.jpg" alt="proyecto1">
                     <div class="sub-titulo2">
                         <h3>WEB DESING</h3>
                         <p>600</p>
                     </div>
-                    <h5>Desing for tenology & services</P>
+                    <h5>Desing for tenology & services</h5>
+                        <button class="saberMas" id="boton1">Saber más</button>
                 </div>
+
                 <div class="cajas2">
+                    <div id="infoAdicional2" class="ocultar">
+                        <p>Lorem ipsum dolor, sit amet. Facere doloribus eveniet deseruntdolorum, laborum rem, facilis,
+                            voluptate reiciendis impedit. Dolores?</p>
+                        <div class="estilo">
+                            <button class="git"><a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a></button>
+                            <button class="cerrar" id="cerrar2">Cerrar</button>
+                        </div>
+                    </div>
                     <img src="Tercera seccion/Full stack.jpg" alt="proyecto2">
                     <div class="sub-titulo2">
                         <h3>APPLICATION</h3>
                         <p>750</p>
                     </div>
                     <h5>Mobile app lading desing & app maintain</h5>
+                    <button class="saberMas" id="boton2">Saber más</button>
                 </div>
+
                 <div class="cajas2">
+                    <div id="infoAdicional3" class="ocultar">
+                        <p>Lorem ipsum dolor, sit amet. Facere doloribus eveniet deseruntdolorum, laborum rem, facilis,
+                            voluptate reiciendis impedit. Dolores?</p>
+                        <div class="estilo">
+                            <button class="git"><a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a></button>
+                            <button class="cerrar" id="cerrar3">Cerrar</button>
+                        </div>
+                    </div>
                     <img src="Tercera seccion/Hostinger.jpg" alt="proyecto3">
                     <div class="sub-titulo2">
                         <h3>PHOTOSHOP</h3>
                         <p>630</p>
                     </div>
                     <h5>Logo desing creativity & Application</h5>
+                    <button class="saberMas" id="boton3">Saber más</button>
                 </div>
             </div>
+
             <div class="contenedor-cajas2">
                 <div class="cajas2">
+                    <div id="infoAdicional4" class="ocultar">
+                        <p>Lorem ipsum dolor, sit amet. Facere doloribus eveniet deseruntdolorum, laborum rem, facilis,
+                            voluptate reiciendis impedit. Dolores?</p>
+                        <div class="estilo">
+                            <button class="git"><a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a></button>
+                            <button class="cerrar" id="cerrar4">Cerrar</button>
+                        </div>
+                    </div>
                     <img src="Tercera seccion/SPA.jpg" alt="proyecto4">
                     <div class="sub-titulo2">
                         <h3>FIGMA</h3>
                         <p>360</p>
                     </div>
                     <h5>Movile app lading desing & Services</h5>
+                    <button class="saberMas" id="boton4">Saber más</button>
                 </div>
+
                 <div class="cajas2">
+                    <div id="infoAdicional5" class="ocultar">
+                        <p>Lorem ipsum dolor, sit amet. Facere doloribus eveniet deseruntdolorum, laborum rem, facilis,
+                            voluptate reiciendis impedit. Dolores?</p>
+                        <div class="estilo">
+                            <button class="git"><a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a></button>
+                            <button class="cerrar" id="cerrar5">Cerrar</button>
+                        </div>
+                    </div>
                     <img src="Tercera seccion/Sing in.jpg" alt="proyecto5">
                     <div class="sub-titulo2">
                         <h3>WEB DESING</h3>
                         <p>280</p>
                     </div>
                     <h5>Desing for tenology & services</h5>
+                    <button class="saberMas" id="boton5">Saber más</button>
                 </div>
+
                 <div class="cajas2">
+                    <div id="infoAdicional6" class="ocultar">
+                        <p>Lorem ipsum dolor, sit amet. Facere doloribus eveniet deseruntdolorum, laborum rem, facilis,
+                            voluptate reiciendis impedit. Dolores?</p>
+                        <div class="estilo">
+                            <button class="git"><a href="https://en.wikipedia.org/wiki/GitHub" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a></button>
+                            <button class="cerrar" id="cerrar6">Cerrar</button>
+                        </div>
+                    </div>
+
                     <img src="Tercera seccion/iphone-410311_1280.jpg" alt="proyecto6">
                     <div class="sub-titulo2">
                         <h3>WEB DESING</h3>
                         <p>690</p>
                     </div>
                     <h5>App for tecnology & services</h5>
+                    <button class="saberMas" id="boton6">Saber más</button>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="tercero" id="resume">
         <div class="titulo">
@@ -317,31 +389,32 @@
                     </div>
                 </div>
             </div>
-            <div class="datos">
+            <form class="datos" id="contacto1">
                 <div class="datos-iniciales">
                     <div class="datos-ingresar">
-                        <label for="">YOUR NAME</label>
-                        <input text="text">
+                        <label for="nombre">YOUR NAME</label>
+                        <input type="text" id="nombre" required>
                     </div>
                     <div class="datos-ingresar">
-                        <label for="">PHONE NUMBER</label>
-                        <input text="text">
+                        <label for="numero">PHONE NUMBER</label>
+                        <input type="number" id="numero" required>
                     </div>
                 </div>
                 <div class="datos-ingresar">
-                    <label for="">EMAIL</label>
-                    <input text="text">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required>
                 </div>
                 <div class="datos-ingresar">
-                    <label for="">SUBJECT</label>
-                    <input text="text">
+                    <label for="sujeto">SUBJECT</label>
+                    <input type="text" id="sujeto" required>
                 </div>
                 <div class="datos-ingresar">
-                    <label for="">YOUR MESSAGE</label>
-                    <textarea id="" cols="30" rows="9"></textarea>
+                    <label for="mensaje">YOUR MESSAGE</label>
+                    <textarea type="text" id="mensaje" cols="30" rows="9" required></textarea>
                 </div>
-                <button><a href="#">SEND MENSAJE</a></button>
-            </div>
+                <button><a>SEND MENSAJE</a></button>
+                <div class="respuesta" id="devolucion"></div>
+            </form>
         </div>
     </section>
 
@@ -350,6 +423,7 @@
         <h5>INBIO</h5>
         <p>Rainbow-Themes.</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
